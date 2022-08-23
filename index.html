@@ -8,18 +8,70 @@
     <title>Momentum</title>
   </head>
   <body>
-    <form id="login-form" class="flex">
-      <input
-        type="text"
-        required
-        maxlength="15"
-        placeholder="Please Write your name"
-      />
-      <button>Submit</button>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+
+    <form id="login-form" class="login-form_show">
+      <span>Hello, What is your name?</span>
+      <div>
+        <input type="text" required maxlength="15" placeholder="" />
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="{2}"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
     </form>
 
-    <h1 class="hidden" id="greeting"></h1>
-    <h2 id="clock">00:00:00</h2>
+    <h1 class="hidden clock" id="clock">00 : 00 : 00</h1>
+    <h2 id="greeting" class="hidden"></h2>
+
+    <h3 id="main-todo" class="hidden main-todo">
+      <form action="" id="main-todo-form">
+        <span>What is your today's main to-do? </span>
+        <div>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Write the main to-do of the day"
+          />
+          <button class="main-todo_register">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="{2}"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
+      <h4 class="your-main-todo hidden">
+        <span></span>
+        <span></span>
+      </h4>
+    </h3>
 
     <form action="" id="todo-form">
       <input type="text" placeholder="Write a To Do and Press Enter" />
@@ -31,16 +83,12 @@
       <span> </span>
     </div>
 
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
-
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/backgrounds.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/main-todo.js"></script>
   </body>
 </html>
