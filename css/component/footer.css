@@ -1,0 +1,26 @@
+footer {
+  bottom: 0;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-sidecolumn {
+  width: 25%;
+}
+.footer-centercolumn {
+  width: 50%;
+}
+
+.todos {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 30px;
+}

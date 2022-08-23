@@ -1,3 +1,4 @@
+const toDoBtn = document.querySelector(".todo-mainbtn_span");
 const toDoForm = document.querySelector("#todo-form");
 const toDoList = document.querySelector("#todo-list");
 const toDoInput = toDoForm.querySelector("input");
@@ -53,3 +54,9 @@ if (savedToDos !== null) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
+
+function showToDos() {
+  console.log("오늘은 여기까지");
+}
+
+toDoBtn.addEventListener("click", showToDos);

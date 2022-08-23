@@ -1,6 +1,70 @@
-.main-todo {
+.main-todo,
+.your-main-todo {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 3%;
   font-size: 40px;
+}
+
+.main-todo-form {
+  display: flex;
+  align-items: center;
+}
+
+#main-todo-form div {
+  display: flex;
+  margin-top: 3%;
+}
+
+.main-todo_input {
+  display: flex;
+  width: 90%;
+  font-size: 32px;
+  border: 0px;
+  border-bottom: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  text-align: center;
+}
+
+.main-todo_input::placeholder {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-size: 29px;
+}
+
+.your-main-todo {
+  margin-top: 0px;
+}
+
+.your-main-todo-today_span {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 5px;
+  margin: 20px 0px;
+}
+
+.main-todo_button {
+  font-size: 32px;
+  width: 10%;
+  border: 0px;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.main-todo-remove_button {
+  font-size: 26px;
+  width: 34px;
+  border: 1px solid white;
+  border-radius: 15%;
+  margin-left: 32px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
 }

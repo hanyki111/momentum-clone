@@ -3,11 +3,13 @@
 /* component */
 @import "component/clock.css";
 @import "component/main-todo.css";
+@import "component/footer.css";
 
 body {
   background-color: beige;
   color: white;
   height: 100%;
+  position:relative;
 }
 
 #login-form {
