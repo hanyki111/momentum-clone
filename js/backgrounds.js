@@ -4,5 +4,8 @@ const randomImage = images[Math.floor(Math.random() * images.length)];
 
 const bgimage = document.createElement("img");
 
-bgimage.src = `img/${randomImage}`;
-document.body.appendChild(bgimage);
+// 강의 코드
+// bgimage.src = `img/${randomImage}`;
+// document.body.appendChild(bgimage);
+
+document.body.style.backgroundImage =`url('img/${randomImage}')`;
