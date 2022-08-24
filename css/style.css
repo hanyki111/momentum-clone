@@ -4,12 +4,13 @@
 @import "component/clock.css";
 @import "component/main-todo.css";
 @import "component/footer.css";
+@import "component/todo.css";
 
 body {
   background-color: beige;
   color: white;
   height: 100%;
-  position:relative;
+  position: relative;
 }
 
 #login-form {

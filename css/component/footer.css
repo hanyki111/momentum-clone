@@ -14,13 +14,8 @@ footer {
 
 .footer-sidecolumn {
   width: 25%;
+  position: relative;
 }
 .footer-centercolumn {
   width: 50%;
-}
-
-.todos {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-right: 30px;
 }

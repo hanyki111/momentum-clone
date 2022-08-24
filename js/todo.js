@@ -2,6 +2,7 @@ const toDoBtn = document.querySelector(".todo-mainbtn_span");
 const toDoForm = document.querySelector("#todo-form");
 const toDoList = document.querySelector("#todo-list");
 const toDoInput = toDoForm.querySelector("input");
+const toDoPopup = document.querySelector(".todo-popup");
 
 let toDos = [];
 
@@ -22,14 +23,22 @@ function paintToDo(newTodo) {
   // newTodo 는 Obj임.
   const toDoLi = document.createElement("li");
   toDoLi.id = newTodo.id;
+
   const toDoLiSpan = document.createElement("span");
   toDoLiSpan.innerText = newTodo.text;
+
   const toDoDeleteBtn = document.createElement("button");
   toDoDeleteBtn.innerText = "X";
+
   toDoDeleteBtn.addEventListener("click", deleteToDo);
   toDoLi.appendChild(toDoLiSpan);
   toDoLi.appendChild(toDoDeleteBtn);
   toDoList.appendChild(toDoLi);
+
+  toDoLi.classList.add("todo-list_li");
+  toDoLiSpan.classList.add("todo-list_li_span");
+  toDoDeleteBtn.classList.add("todo-remove_button");
+  toDoDeleteBtn.classList.add("todo-list_li_button");
 }
 
 function handleToSubmit(event) {
@@ -56,7 +65,7 @@ if (savedToDos !== null) {
 }
 
 function showToDos() {
-  console.log("오늘은 여기까지");
+  toDoPopup.classList.toggle("hidden");
 }
 
 toDoBtn.addEventListener("click", showToDos);
